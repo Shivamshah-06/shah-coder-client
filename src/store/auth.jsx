@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:5000/user", {
+      const response = await fetch("https://shah-coder-server.onrender.com/user", {
         method: "GET",
         headers: {
           Authorization: authorization,
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   };
   const getService = async () => {
     try {
-      const response=await fetch("http://localhost:5000/service",{
+      const response=await fetch("https://shah-coder-server.onrender.com/service",{
       method:"GET"
     })
     if(response.ok){

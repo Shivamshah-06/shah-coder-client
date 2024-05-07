@@ -35,7 +35,7 @@ if(user &&userData){
     e.preventDefault();
 
     console.log(contact);
-    const response=await fetch("http://localhost:5000/contact",{
+    const response=await fetch("https://shah-coder-server.onrender.com/contact",{
       method:"POST",
       headers:{
         "Content-Type":"application/json",

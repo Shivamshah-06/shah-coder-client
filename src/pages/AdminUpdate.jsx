@@ -27,7 +27,7 @@ const params=useParams();
   };
   const getUserById=async()=>{
     try {
-      const response = await fetch(`http://localhost:5000/admin/users/${params.id}`, {
+      const response = await fetch(`https://shah-coder-server.onrender.com/admin/users/${params.id}`, {
         method: "GET",
         headers: {
           Authorization: authorization,
@@ -46,7 +46,7 @@ const params=useParams();
   const handleSubmit=async(e)=>{
     e.preventDefault();
     try {
-      const response=await fetch(`http://localhost:5000/admin/users/update/${params.id}`,{
+      const response=await fetch(`https://shah-coder-server.onrender.com/admin/users/update/${params.id}`,{
         method: "PATCH",
         headers: {
           "Content-Type":"Application/json",

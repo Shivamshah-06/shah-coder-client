@@ -9,7 +9,7 @@ const AdminContacts = () => {
   const getAllContacts=async()=>{
     
     try {
-      const response=await fetch("http://localhost:5000/admin/contacts",{
+      const response=await fetch("https://shah-coder-server.onrender.com/admin/contacts",{
       method:"GET",
       headers:{
         Authorization:authorization,  
@@ -28,7 +28,7 @@ const AdminContacts = () => {
   },[])
   const deleteUser=async(id)=>{
     try {
-    const response=await fetch(`http://localhost:5000/admin/contacts/delete/${id}`,{
+    const response=await fetch(`https://shah-coder-server.onrender.com/admin/contacts/delete/${id}`,{
     method:"DELETE",
     headers:{
       Authorization:authorization,  
